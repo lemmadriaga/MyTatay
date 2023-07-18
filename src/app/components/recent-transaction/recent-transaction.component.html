@@ -1,0 +1,14 @@
+<ion-card class="transaction-card" (click)="showDetails()">
+  <ion-item lines="none" class="transaction-item">
+    <ion-avatar class="transaction-avatar">
+      <img [src]="transaction.profilePhoto" alt="Profile Photo">
+    </ion-avatar>
+    <ion-label class="transaction-details">
+      <h3 class="transaction-name">{{ transaction.name }}</h3>
+      <p class="transaction-type">{{ transaction.type }}</p>
+      <p class="transaction-description">{{ transaction.description }}</p>
+      <p class="transaction-amount">{{ transaction.amount }}</p>
+    </ion-label>
+    <ion-icon name= "cash-outline" class="transaction-icon"></ion-icon>
+  </ion-item>
+</ion-card>

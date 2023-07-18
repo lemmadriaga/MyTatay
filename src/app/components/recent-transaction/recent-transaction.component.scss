@@ -1,0 +1,71 @@
+ion-card {
+  margin: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.transaction-card {
+  background-color: #fff;
+}
+
+.transaction-item {
+  padding: 8px;
+}
+
+.transaction-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  --background: var(--ion-color-primary);
+}
+
+.transaction-details {
+  margin-left: 12px;
+}
+
+.transaction-name {
+  color: #444;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.transaction-type {
+  color: #777;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.transaction-description {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.transaction-amount {
+  font-size: 18px;
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.transaction-icon {
+  font-size: 24px;
+  color: #f8b405;
+  text-align: right;
+}
+
+/* Animation */
+.transaction-card {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

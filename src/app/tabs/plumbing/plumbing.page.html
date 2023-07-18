@@ -1,0 +1,66 @@
+<ion-content>
+  <div class="container">
+    <div class="iphone">
+      <div class="header">
+        <div class="order-summary">
+          <div class="order-status">Order Details</div>
+          <div class="order-name">
+            Plumbing
+          </div>
+          <div class="order-day">
+            Please Review before checking out
+          </div>
+        </div>
+        <div class="action-btn" (click)="goToOtherPage()">
+          <div class="back-btn"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <div class="triangle1"></div>
+        <div class="arc"></div>
+        <div class="pattern"></div>
+        <img src="../assets/3d-plumbing.png" class="hero-img">
+      </div>
+      <div class="name">
+        <strong>Checkout Form</strong>
+      </div>
+      <form (ngSubmit)="submitCheckoutForm()" class="checkout-form">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Full Name</ion-label>
+            <ion-input type="text" required [(ngModel)]="formData.fullName"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" required [(ngModel)]="formData.email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Address</ion-label>
+            <ion-input type="text" required [(ngModel)]="formData.address"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Payment Options</ion-label>
+            <ion-select [(ngModel)]="formData.paymentOption">
+              <ion-select-option value="cash">Cash Payment</ion-select-option>
+              <ion-select-option value="online">Online Payment</ion-select-option>
+              <ion-select-option value="bank">Bank to Bank</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Will you provide additional tools?</ion-label>
+            <ion-checkbox [(ngModel)]="formData.provideTools"></ion-checkbox>
+          </ion-item>
+
+
+        </ion-list>
+
+        <ion-button color= "primary" type="submit" expand="full" (click)="submitCheckoutForm()">Place Order</ion-button>
+      </form>
+
+    </div>
+  </div>
+</ion-content>

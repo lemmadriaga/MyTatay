@@ -1,0 +1,33 @@
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+ion-card-content {
+  padding: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  margin-bottom: 16px;
+}
+
+ion-label {
+  color: #444;
+  font-weight: bold;
+}
+
+ion-input {
+  border-radius: 8px;
+}
+
+.save-button {
+  margin-top: 16px;
+}

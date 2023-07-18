@@ -1,0 +1,78 @@
+
+.header-title {
+  display: grid;
+  align-items: center;
+}
+
+.header-logo {
+  height: 20%;
+  width: auto;
+  margin-right: 10px;
+}
+
+ion-list{
+  display: block;
+  align-items: center;
+}
+ion-card{
+  width: 90%;
+  height: auto;
+  margin-right: -100px;
+}
+.coupon-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coupon-description {
+  font-size: 16px;
+  color: orange;
+}
+
+.coupon-code-container {
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.coupon-code {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.coupon-expiry {
+  color: #999;
+  margin-top: 5px;
+}
+.voucher-header {
+  --background: orange;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.voucher-header.rounded-corner {
+  position: relative;
+  overflow: hidden;
+}
+
+.voucher-header.rounded-corner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200%;
+  height: 100%;
+  background-color: var(--background);
+  transform-origin: bottom right;
+  transform: rotate(45deg);
+}
+.image1{
+  width: 120px;
+  height: auto;
+}
+
+

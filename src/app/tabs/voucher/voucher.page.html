@@ -1,0 +1,47 @@
+
+<ion-content>
+  <ion-header class="ion-no-border" >
+    <ion-toolbar mode="md">
+      <ion-buttons slot="start">
+        <ion-button>
+          <img src="../assets/tatay222.png" class="image1" alt="">
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-buttons slot="end">
+        <ion-button class="search-btn">
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+        </ion-button>
+        <ion-button id="click-trigger">
+          <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+          <ion-popover trigger="click-trigger" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">You don't have any notification</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-list>
+    <ion-item *ngFor="let coupon of coupons">
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title class="coupon-title">{{ coupon.title }}</ion-card-title>
+          <ion-card-subtitle class="coupon-description">{{ coupon.description }}</ion-card-subtitle>
+          <div class="coupon-code-container">
+            <ion-button (click)="markAsClaimed(coupon)" [disabled]="coupon.claimed" class="coupon-code">{{ coupon.code }} {{ coupon.claimed ? 'Claimed' : '' }}</ion-button>
+          </div>
+          <p class="coupon-expiry">Expires on {{ coupon.expiry }}</p>
+        </ion-card-content>
+        <ion-card-footer>
+        </ion-card-footer>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+
+

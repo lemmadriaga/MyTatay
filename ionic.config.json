@@ -1,0 +1,7 @@
+{
+  "name": "MyTatay_3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

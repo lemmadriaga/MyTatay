@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ion-content {
+  font-family: '', sans-serif;
+  font-weight: 400;
+  background-color: #CFDBEA;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  position:relative;
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.order-summary {
+  margin-left: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; 
+}
+
+.order-summary > div {
+  margin: 6px;
+}
+
+.order-status {
+  color: #338A9A;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.order-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.order-day {
+  color: #338A9A;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.name{
+    font-size: x-large ;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: orange;
+}
+.back-btn {
+  margin-right: 50px;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.hero-img-container::before {
+  height: 20px;
+  width: 20px;
+  background-color: orange;
+  position: absolute;
+  top: 25px;
+  right: 150px;
+  border-radius: 50%;
+}
+.arc {
+  border: 1px solid #000;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 0.5em;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.4;
+  position:absolute;
+  transform: rotate(-40deg);
+  left: -10px;    
+}
+
+.pattern {
+  width: 50px;
+  height: 50px;
+ background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8Y2lyY2xlIGN4PSc0JyBjeT0nNCcgcj0nNCcgZmlsbD0nYmxhY2snLz4KPC9zdmc+");
+  opacity: 0.1;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transform: scale(1.2);
+}
+
+.triangle1 {
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 20px 10px;
+border-color: transparent transparent orange transparent;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  transform:rotate(-45deg);
+}
+
+.hero-img {
+  width: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ion-content {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #CFDBEA;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.checkout-form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form ion-item {
+  margin-bottom: 16px;
+}
+
+.checkout-form ion-button {
+  --background: #338A9A;
+  --color: #FFFFFF;
+  margin-top: 16px;
+  --ripple-color: #FFFFFF;
+}
+

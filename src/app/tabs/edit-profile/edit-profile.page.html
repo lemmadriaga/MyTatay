@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/user-profile"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="edit-profile-card">
+    <ion-card-content>
+      <form (ngSubmit)="saveChanges()">
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input [(ngModel)]="user.name" name="name" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input [(ngModel)]="user.email" name="email" required type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Location</ion-label>
+          <ion-input [(ngModel)]="user.location" name="location" required></ion-input>
+        </ion-item>
+        <ion-button class="save-button" expand="full" type="submit" color="primary">Save Changes</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
